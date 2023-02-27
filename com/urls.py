@@ -1,0 +1,105 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+     path('', views.index, name='index'),
+     path('Taj-Leather-bags-gallery/', views.Gallery, name='Taj-Leather-product-Gallery'),
+     path('contact/', views.contact, name='Taj-Leather-product-contactus'),
+     path('Taj-Leather-product-aboutus/', views.About, name='Taj-Leather-product-aboutus'),
+     path('Leather-Bag-Manufacturer/', views.Product, name='Leather-Bag-Manufacturer'),
+     path('Leather-duffle-bags/', views.Duffle, name='Leather-Duffle-Bag-Manufacturer'),
+     path('Leather-Bagpack/', views.Backpacks, name='Leather-Duffle-Bag-Manufacturer'),
+     path('Leather-sling-bags-manufacturer/', views.Sling, name='sling-bags-manufacturer'),
+     path('Leather-Bag-Manufacturer/', views.Product, name='Leather-Bag-Manufacturer'),
+     path('Leather-duffle-bags/', views.Duffle, name='Leather-Duffle-Bag-Manufacturer'),
+     path('Leather-Bagpack/', views.Backpacks, name='Leather-Duffle-Bag-Manufacturer'),
+     path('Leather-sling-bags-manufacturer/', views.Sling, name='sling-bags-manufacturer'),
+     path('Leather-tote-bag/', views.Totebag, name='Leather-tote-bag'),
+     path('Leather-messanger-bag/', views.Messangerbag, name='Leather-messanger-bag'),
+     path('Leather-laptop-bags/', views.Laptopbag, name='Leather-laptop-bags'),
+     path('Leather-briefcase-bag/', views.Leatherbriefcasebag, name='briefcase-bag'),
+     path('Leather-toiletry-bag/', views.Leatherwashbag, name='toiletry-bag'),
+     path('Leather-Saddle-Bags/', views.Leathersaddlebag, name='Leather-Saddle-Bags'),
+     path('Leather-hobo-bag/', views.Leatherhobobag, name='Leather-hobo-bag'),
+     path('Leather-journal-manufacturer/', views.Leatherjournal, name='journal-manufacturer'),
+     path('Leather-diary-manufacturer/', views.Leatherdiarymanufacturer, name='Leather-diary-manufacturer'),
+     path('Leather-embossed-manufacturer/', views.Leatherembossed, name='Leather-embossed-manufacturer'),
+     path('Leather-diary/', views.Leatherdiary, name='Leather-diary'),
+     path('Leather-Jacketsmaen/', views.Jacketsmaen, name='Jacketsmaen'),
+     path('Leather-Jacketswomen/', views.Jacketswomen, name='Jacketswomen'),
+     path('Leather-leather-wallet/', views.Leatherwallet, name='Leather-leather-wallet'),
+     path('Leather-leather-apron/', views.Leatheraprons, name='Leather-leather-apron'),
+     path('Leather-accories/', views.Leatheraccories, name='Leather-accories'),
+     path('Leather-Cushion-Cover/', views.Leathercustion, name='Leather-Cushion-Cover'),
+     path('Leathersling-bags-women/', views.Womenslingbag, name='Leather-sling-bags-women'),
+     path('Leather-women-backpacks/', views.Womenbackpacks, name='Leather-women-backpacks'),
+     path('Leather-women-laptop-bag/', views.WomenLaptopbag, name='women-laptop-bag'),
+     path('Leather-women-purses-clutches/', views.Womenpurses, name='Leather-women-purses-clutches'),
+     path('Leather-women-travel/', views.Womentravelbag, name='Leather-women-travel'),
+     path('Leather-sling-bag-for-men/', views.Menslingbag, name='sling-bag-for-men'),
+     path('Leather-men-backpacks/', views.Menbackpack, name='men-backpacks'),
+     path('Leather-men-laptop-bag/', views.Menlaptopbags, name='Leathermen-laptop-bag'),
+     path('Leather-leather-belts/', views.Belts, name='leather-belts'),
+     path('Leather-Wallet/', views.Wallet, name='wallet-maker-online'),
+     path('Leather-men-travel-bag/', views.Mentravelbags, name='Leather-men-travel-bag'),
+     path('Leather-leather-laptop-bags/', views.Laptopbag, name='leather-laptop-bags'),
+     path('Leather-bike-bag/', views.Bikebag, name='Leather-leather-bikebag'),
+     path('Leather-travel-bags/', views.Travelbag, name='Leather-travel-bags'),
+     path('Leather-toiletry-bag/', views.Toiletrybag, name='toiletry-bag'),
+     path('Leather-cushion/', views.Cushion, name='Leather-Bag-Manufacturer'),
+     path('Leather-camera-bag/', views.Camera, name='camera-bag'),
+     path('Leather-apron-manufacturer/', views.Leatheraprons, name='leather-apron-manufacturer'),
+
+
+#seo 80 pages
+     path('australian-leather-bags-manufacturer/', views.Austrilianbag, name='australian-leather-bags-manufacturer'),
+     path('bag-manufacturer-melbourne/', views.Melbournebag, name='bag-manufacturer-melbourne'),
+     path('best-leather-bag-manufacturers-in-india/', views.Bestleatherindia, name='best-leather-bag-manufacturers-in-india'),
+     path('best-wallet-manufacturers-in-india/', views.Bestwalletmanu, name='best-wallet-manufacturers-in-india'),
+     path('cheap-branded-bags-in-germany/', views.Brandedbag, name='cheap-branded-bags-in-germany'),
+     path('cheap-leather-bags-in-usa/', views.Lusa, name='cheap-leather-bags-in-usa'),
+     path('cheap-leather-bag/', views.ChaapL, name='cheap-leather-bag'),
+     path('custom-bag-manufacturers-australia/', views.CLBA, name='custom-bag-manufacturers-australia'),
+     path('custom-leather-bag-manufacturers/', views.CLB, name='custom-leather-bag-manufacturers'),
+     path('customized-leather-bags-india/', views.CLI, name='customized-leather-bags-india'),
+     path('german-leather-bags/', views.GLB, name='german-leather-bags'),
+     path('handmade-leather-bag-in-usa/', views.HLB, name='handmade-leather-bag-in-usa'),
+     path('handmade-leather-bag-manufacturer/', views.LBM, name='handmade-leather-bag-manufacturer'),
+     path('handmade-leather-bag-manufacturer-australia/', views.LBMA, name='handmade-leather-bag-manufacturer-australia'),
+     path('handmade-leather-bag-manufacturer-france/', views.LBF, name='handmade-leather-bag-manufacturer-france'),
+     path('handmade-leather-bag-manufacturer-germany/', views.LBG, name='handmade-leather-bag-manufacturer-germany'),
+     path('handmade-leather-bag-manufacturer-in-canada/', views.LBC, name='handmade-leather-bag-manufacturer-in-canada'),
+     path('handmade-leather-bag-manufacturer-uk/', views.LBCUK, name='handmade-leather-bag-manufacturer-uk'),
+     path('handmade-leather-bag-manufacturer-usa/', views.LBCMU, name='handmade-leather-bag-manufacturer-usa'),
+     path('handmade-leather-bag-manufacturers/', views.LBAGS, name='handmade-leather-bag-manufacturers'),
+     path('handmade-leather-manufacturer-in-india/', views.LIND, name='handmade-leather-manufacturer-in-india'),
+     path('handmade-leather-bags-sydney/', views.LBSY, name='handmade-leather-bags-sydney'),
+     path('leather-bags-manufacturers-in-india/', views.INDB, name='leather-bags-manufacturers-in-india'),
+     path('leather-bag-manufacturers-usa/', views.BAGUSA, name='leather-bags-manufacturers-in-india'),
+
+     path('leather-bag-manufacturers-near-me/', views.NEAR, name='leather-bag-manufacturers-near-me'),
+     path('leather-bag-manufacturer-uk/', views.UK, name='leather-bag-manufacturer-uk'),
+     path('leather-bag-manufacturer-italy/', views.Italy, name='leather-bag-manufacturer-italy'),
+     path('leather-bag-manufacturer-france.html/', views.France, name='leather-bag-manufacturer-france.html'),
+     path('leather-bag-manufacturer-canada/', views.Canada, name='leather-bag-manufacturer-canada'),
+     path('leather-bag-manufacturer-australia/', views.Austrilia, name='leather-bag-manufacturer-australia'),
+     path('leather-bag-manuafacurer-germany/', views.GER, name='leather-bag-manuafacurer-germany'),
+     path('leather-goods-manufactuer-europe/', views.EUR, name='leather-goods-manufactuer-europe'),
+     path('leather-goods-manufacturer/', views.LGM, name='leather-goods-manufacturer'),
+     path('leather-goods-manufacturer-australia/', views.GAUS, name='leather-goods-manufacturer-australia'),
+     path('leather-goods-manufacturer-germany/', views.GGer, name='leather-goods-manufacturer-germany'),
+     path('leather-goods-manufacturer-in-usa/', views.Dgusa, name='leather-goods-manufacturer-in-usa'),
+     path('leather-goods-manufacturer-in-india/', views.Indg, name='leather-goods-manufacturer-in-india'),
+     path('leather-goods-manufacturer-in-canada/', views.Gc, name='leather-goods-manufacturer-in-canada'),
+
+
+
+
+
+
+
+
+
+
+]

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+{% load static %}
+
+<!-- START HEAD -->
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- this line will appear only if the website is visited with an iPad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
+
+    <title>Celestino | only for creative minds.</title>
+
+    <!-- RESET STYLESHEET -->
+    <link rel="stylesheet" type="text/css" media="all" href="{% static '' %}css/reset.css" />
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link rel="stylesheet" type="text/css" media="all" href="{% static '' %}css/bootstrap.css" />
+    <!-- MAIN THEME STYLESHEET -->
+    <link rel="stylesheet" type="text/css" media="all" href="{% static '' %}style.css" />
+
+    <link rel='stylesheet' id='custom-css'  href="{% static '' %}css/custom.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='google-fonts-css'  href='http://fonts.googleapis.com/css?family=Oswald%7CDroid+Sans%7CPlayfair+Display%7COpen+Sans+Condensed:300,400,800%3A300%7CRokkitt%7CShadows+Into+Light%7CMaven+Pro:400,700%7CAbel%7CMontez' type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-css'  href="{% static '' %}css/responsive.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='tipsy-css'  href="{% static '' %}css/tipsy.css" type='text/css' media='all' />
+
+    <link rel='stylesheet' id='fonts-css'  href="{% static '' %}css/font-awesome.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='shortcode-css'  href="{% static '' %}css/shortcodes.css" type='text/css' media='all' />
+
+    <link rel='stylesheet' id='colorbox-css'  href="{% static '' %}css/colorbox.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-button-mfast-3-css'  href="{% static '' %}css/buttons/mfast-3.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='flexi-slider-css'  href="{% static '' %}css/contact_form.css" type='text/css' media='all' />
+
+
+    <!-- [favicon] begin -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '' %}favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{% static '' %}favicon.ico" />
+    <!-- [favicon] end -->
+
+    <!-- Touch icons more info: http://mathiasbynens.be/notes/touch-icons -->
+    <!-- For iPad3 with retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static '' %}apple-touch-icon-144x.png" />
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static '' %}apple-touch-icon-114x.png" />
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static '' %}apple-touch-icon-72x.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="{% static '' %}apple-touch-icon-57x.png" />
+
+    <link rel='stylesheet' id='thickbox-css'  href="{% static '' %}js/thickbox/thickbox.css" type='text/css' media='all' />
+
+    <script type='text/javascript' src="{% static '' %}js/jquery/jquery.js"></script>
+</head>
+<!-- END HEAD -->
+
+<!-- START BODY -->
+<body class="home page no_js responsive stretched">
+
+<!-- START BG SHADOW -->
+<div class="bg-shadow">
+
+<!-- START WRAPPER -->
+<div id="wrapper" class="container group">
+<!-- START TOP BAR -->
+
+<!-- START TOP BAR -->
+<div id="topbar">
+    <div class="container">
+        <div class="row">
+            <div id="last-tweets-3" class="widget-first span6 widget last-tweets">
+                <h3>Last Tweets</h3>
+                <div class="list-tweets-3"></div>
+
+                <script type="text/javascript">
+                    jQuery(function($){
+                        $('#last-tweets-3 .list-tweets-3').tweetable({
+                            listClass: 'tweets-widget-3',
+                            username: 'YIW',
+                            time: false,
+                            limit: 3,
+                            replies: false
+                        });
+                    });
+                </script>
+
+            </div>
+
+            <div id="text-8" class=" widget-last span6 widget widget_text">
+                <div class="textwidget">
+                    <a href="# " class="socials-small facebook-small" title="Facebook"  >facebook</a>
+
+                    <a href="#" class="socials-small rss-small" title="Rss"  >rss</a>
+
+                    <a href="#" class="socials-small twitter-small" title="Twitter"  >twitter</a>
+
+                    <a href="#" class="socials-small google-small" title="Google"  >google</a>
+
+                    <a href="#" class="socials-small linkedin-small" title="Linkedin"  >linkedin</a>
+
+                    <a href="#" class="socials-small pinterest-small" title="Pinterest"  >pinterest</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    jQuery(function($){
+        var twitterSlider = function(){
+            $('#topbar .last-tweets ul').addClass('slides');
+            $('#topbar .last-tweets').flexslider({
+                animation: "fade",
+                slideshowSpeed: 5 * 1000,
+                animationDuration: 700,
+                directionNav: false,
+                controlNav: false,
+                keyboardNav: false
+            });
+        };
+        $('#topbar .last-tweets > div').bind('tweetable_loaded', function(){
+            twitterSlider();
+        });
+    });
+</script>
+
+<!-- END TOP BAR -->
+
+
+
+
+<!-- START HEADER -->
+<div id="header" class="group">
+    <div class="group container">
+        <div class="row">
+            <div class="span12">
+
+                <div class="row">
+                    <!-- START LOGO -->
+                    <div id="logo" class="span4 group">
+
+
+
+
+
+
+
+
+                        <a id="logo-img" href="/" title="Tajleatherproducte">
+                            <img src="{% static 'tajleather.png' %}" title="TAJ LEATHER PRODUCTE 600 YEARS OF TRUST" alt="classy producte"  width="95" height="95" />
+                        </a>
+
+
+                    </div>
+                    <!-- END LOGO -->
+                    <div id="menu" class="span8 group">
+                          <!-- START MAIN NAVIGATION -->
+                        <div class="menu">
+                            <ul id="nav" class="sf-menu">
+                                <li class="nav-icon-h">
+                                    <a href="/">
+                                       <b> HOME</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+
+
+
+
+
+
+
+
+                                    </ul>
+                                </li>
+
+
+
+
+
+                                      <li class="">
+                                    <a href="index.html">
+                                        <b>LEATHER-BAGS</b>
+
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-icon-open-smal">
+                                            <a href="home-ii.html">
+                                                <b>Leather-Duffle-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-folder-smal">
+                                            <a href="home-iii.html">
+                                                <b>Leather-Backpacks</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-target-smal">
+                                            <a href="home-iv.html">
+                                               <b>Leather-Sling-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-design-smal">
+                                            <a href="home-v.html">
+                                               <b>Leather Tote Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-cert-smal">
+                                            <a href="home-vi.html">
+                                               <b>Leather-Messenger-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-book-smal">
+                                            <a href="home-vii.html">
+                                                <b>Leather-Laptop-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-cake-smal">
+                                            <a href="home-viii.html">
+                                                <b>Leather Briefcase & Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-bulb-smal ">
+                                            <a href="home-ix.html">
+                                               <b>Leather Wash Bags/Toiletry Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                         <li class="nav-icon-bulb-smal ">
+                                            <a href="home-ix.html">
+                                              <b>Leather-Saddle-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                         <li class="nav-icon-bulb-smal ">
+                                            <a href="home-ix.html">
+                                                <b>Leather-Hobo-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+                                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <li class="nav-icon-monito">
+                                    <a href="#">
+                                        <b>JOURNALS</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="revolution-slider.html">
+                                                <b>Leather-journal-manufacturer</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="images-grid.html">
+                                                <b>Leather-diary-manufacturer</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sliders-thumbnails.html">
+                                                <b>Leather-embossed-manufacturer</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="elastic.html">
+                                                <b>Leather-diary</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </li>
+                                <li class="nav-icon-do">
+                                    <a href="#">
+                                       <b>JACKETS</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-icon-team-smal">
+                                            <a href="pages-about.html">
+                                                <b>Jackets-for-men</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-bubble-smal ">
+                                            <a href="pages-testimonials.html">
+                                                <b>Jackets-for-women</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-contact-smal ">
+                                            <a href="pages-contact.html">
+                                                <b>Leather wallet&purses</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-icon-bomb-smal">
+                                            <a href="error-404.html">
+                                                <b>Leather Apron</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                         <li class="nav-icon-bomb-smal">
+                                            <a href="error-404.html">
+                                                <b>Leather Accsories</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+ <li class="nav-icon-bomb-smal">
+                                            <a href="error-404.html">
+                                                <b>Leather-Cushion-Cover</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+                                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <li class="nav-icon-work">
+                                    <a href="#">
+                                        <b>SLING-BAG</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="portfolio-pinterest-style.html">
+                                                <b>Women-Sling-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-slide-detail.html">
+                                                <b>Women-Backpacks</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-filterable.html">
+                                                <b>Women-Laptop-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-2-columns.html">
+                                                <b>Women-Purses</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-3-columns.html">
+                                                <b>Women-Travel-Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-4-columns.html">
+                                                <b>Men’s Sling Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-big-image.html">
+                                                <b>Men Backpacks</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-slider.html">
+                                                <b>Men’s Laptop Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Belts</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                         <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Wallet</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                         <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Men’s Travel Bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Laptop-bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Bike-bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+    <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Travel-bags</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Toiletry-Bag</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+  <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Cushion</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+  <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>Camera-Bag</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+  <li>
+                                            <a href="portfolio-detail.html">
+                                                <b>leather-apron</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+                                </li>
+                                <li class="nav-icon-newspape">
+                                    <a href="/com/Taj-Leather-product-aboutus/">
+                                        <b>AB</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="/com/Taj-Leather-product-aboutus/">
+                                                <b>About us</b>
+                                                <div style="position:absolute; left: 50%;">
+                                                    <span class="triangle">&nbsp;</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </li>
+                                <li class="nav-icon-la">
+                                    <a href="/com/Taj-Leather-product-contact/">
+                                        <b>CONTACT</b>
+                                        <div style="position:absolute; left: 50%;">
+                                            <span class="triangle">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu">
+
+
+
+
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END MAIN NAVIGATION -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="border-header"></div>
+</div>
+<!-- END HEADER -->
+
+<!-- START MAP -->
+<div id="map">
+    <iframe
+            style="width:100%;height:335px;"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.it/maps?ll=41.506705,15.326647&spn=0.00687,0.016512&sll=41.506700,15.326680&amp;output=embed">
+    </iframe>
+
+    <div id="map-handler" class="container">
+        <a href="#">[x] Close</a>
+    </div>
+</div>
+<!-- END MAP --><!-- START PAGE META -->
+<div id="page-meta" class="container">
+
+    <!-- TITLE -->
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+
+    <!-- BREDCRUMB -->
+    <div class="breadcrumbs">
+        <p id="yit-breadcrumb" itemprop="breadcrumb">
+            <a class="home" href="index.html">Home Page</a> &gt;
+            <a class="no-link current" href="#">Contact</a>
+        </p>
+    </div>
+</div>
+<!-- END PAGE META -->
+
+<!-- START PRIMARY -->
+<div id="primary" class="sidebar-right">
+    <div class="container group">
+        <div class="row">
+            <!-- START CONTENT -->
+            <div id="content-page" class="span9 content group">
+                <div class="page type-page status-publish hentry group">
+                    <h3>Contact me</h3>
+                    <p>&nbsp;</p>
+                    <form id="contact-form-contact-form" class="contact-form row" method="post" action="/com/contact/" enctype="multipart/form-data">{% csrf_token %}
+
+                        <div class="usermessagea"></div>
+                        <fieldset>
+                            <ul>
+                                <li class="text-field span3">
+                                    <label for="name-contact-form">
+                                        <span class="mainlabel">Name</span>
+                                    </label>
+                                    <div class="input-prepend">
+                                        <span class="add-on">
+                                            <i class="icon-user"></i>
+                                        </span>
+                                        <input type="text" name='name'  id="name-contact-form" class="required" value="" />
+
+                                    </div>
+                                    <div class="msg-error"></div>
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li class="text-field span3">
+                                    <label for="email-contact-form">
+                                        <span class="mainlabel">Email</span>
+                                    </label>
+                                    <div class="input-prepend">
+                                        <span class="add-on">
+                                            <i class="icon-envelope"></i>
+                                        </span>
+                                        <input type="text" name='email' id="email-contact-form" class="required email-validate" value="" />
+                                    </div>
+
+                                    <div class="msg-error"></div>
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li class="text-field span3">
+                                    <label for="phone-contact-form">
+                                        <span class="mainlabel">Phone</span>
+                                    </label>
+                                    <div class="input-prepend">
+                                        <span class="add-on">
+                                            <i class="icon-phone"></i>
+                                        </span>
+                                        <input type="text" name="phone" id="phone-contact-form" class="" value="" />
+                                    </div>
+
+                                    <div class="msg-error"></div>
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li class="textarea-field span9">
+                                    <label for="message-contact-form">
+                                        <span class="mainlabel">Message</span>
+                                    </label>
+                                    <div class="input-prepend">
+                                        <span class="add-on">
+                                            <i class="icon-pencil"></i>
+                                        </span>
+                                        <textarea name='desc' id="message-contact-form" rows="8" cols="30" class="required"></textarea>
+                                    </div>
+                                    <div class="msg-error"></div>
+                                    <div class="clear"></div>
+                                </li>
+
+                                <li class="submit-button span9">
+                                    
+                                    <input type="submit" name="yit_sendemail" value="Send Message" class="sendmail alignright" />
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+
+                    <script type="text/javascript">
+                        var messages_form_3 = {
+                            name: "Insert the name",
+                            email: "Insert a valid email",
+                            phone: "",
+                            message: "Insert a message"
+                        };
+                    </script>
+
+                </div>
+
+                <!-- START COMMENTS -->
+                <div id="comments"></div>
+                <!-- END COMMENTS -->
+            </div>
+            <!-- END CONTENT -->
+
+            <!-- START SIDEBAR -->
+            <div id="sidebar-contact" class="span3 sidebar group">
+                <div id="contact-info-2" class="widget-first widget contact-info">
+                    <h3>Contact info</h3>
+                    <div class="sidebar-nav">
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Address:</span> Jain Mandir Road, Sanganer Jaipur, (Raj.), India
+                            </li>
+
+                            <li>
+                                <i class="icon-phone" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Phone:</span>  +91 90014 75770
+                            </li>
+
+                            <li>
+                                <i class="icon-print" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Tel:</span> +0141 2732342
+                            </li>
+
+                            <li>
+                                <i class="icon-envelope" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Email:</span>  info@tajleatherproduct.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="text-2" class="widget-2 widget-last widget widget_text">
+                    <h3>WE ARE BEST LEATHER PRODUCT MANUFACTURER</h3>
+                    <div class="textwidget">We are leather product manufacturer and we create some cool bags and leather producte
+                <br /><br />
+
+                   <center>
+
+
+   <a href="https://api.whatsapp.com/send?phone=919001475770&app=facebook&entry_point=page_cta&fbclid=IwAR1UMC2YyYjSXmDfYWrHtcg2_B42b7JnKGLNe7pRI9goCkN7K2E3fOHoJTE"><img src="{% static 'what.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+  <a href="https://www.instagram.com/taj_paper_udyog/?utm_medium=copy_link"><img src="{% static 'in.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+   <a href="https://www.facebook.com/tajpaper"><img src="{% static 'fb.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+     <a href="https://twitter.com/aadiltaj2"><img src="{% static 'tw.jpg' %}" alt="Girl in a jacket" width="30" height="30"></a>
+     <a href="https://www.linkedin.com/company/taj-paper-udyog/mycompany/"><img src="{% static 'li.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+             <a href="https://www.linkedin.com/company/taj-paper-udyog/mycompany/"><img src="{% static 're.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+        </center>
+
+            </div>
+        </div>
+            <!-- END SIDEBAR -->
+
+            <!-- START EXTRA CONTENT -->
+            <!-- END EXTRA CONTENT -->
+
+        </div>
+    </div>
+</div>
+<!-- END PRIMARY -->
+
+<!-- START FOOTER -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="widget-first widget span3 recent-posts">
+                    <h3>WELCOME TO TAJLEATHER PRODUCTE</h3>
+                    <div class="recent-post">
+                        <div class="post type-post status-publish format-gallery hentry category-web-design group">
+
+                            <div class="date">
+                                <span class="month">A</span>
+                                <span class="day">    1</span>
+                            </div>
+
+                            <div class="text">
+                                <h3>
+                                    <a href="blog-detail.html" title="600 years of trust">
+                                        A Sign of trust
+                                    </a>
+                                </h3>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post type-post status-publish format-standard hentry category-elegant-vintage group">
+
+                            <div class="date">
+                                <span class="month">TAJ </span>
+                                <span class="day">    </span>
+
+                            </div>
+
+                            <div class="text">
+                                <h3>
+                                    <a href="#" title="A classic custom producte">
+                                       A classic producte
+                                    </a>
+                                </h3>
+
+                                <p>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget span3 widget_flickrRSS">
+                    <h3>IMAGES</h3>
+
+                    <a title="1P4B6832" href="{% static '65 (4).jpg' %}"><img alt="1P4B6832" src="{% static '65 (4).jpg' %}"></a>
+                    <a title="DSC03253" href="{% static '66 (1).jpg' %}"><img alt="DSC03253" src="{% static '66 (1).jpg' %}"></a>
+                    <a title="Tappas in Hondarribia" href="{% static '66 (2).jpg' %}"><img alt="Tappas in Hondarribia" src="{% static '66 (2).jpg' %}"></a>
+                    <a title="P1000624" href="{% static '66 (3).jpg' %}"><img alt="P1000624" src="{% static '66 (3).jpg' %}"></a>
+                    <a title="" href="{% static '66 (4).jpg' %}"><img alt="" src="{% static '66 (4).jpg' %}"></a>
+                    <a title="P1010059" href="{% static '67 (1).jpg' %}"><img alt="P1010059" src="{% static '67 (1).jpg' %}"></a>
+                    <a title="Berlijn 2013" href="{% static '67 (3).jpg' %}"><img alt="Berlijn 2013" src="{% static '67 (3).jpg' %}"></a>
+                    <a title="20130518-_DSC9574" href="{% static '67 (4).jpg' %}"><img alt="20130518-_DSC9574" src="{% static '67 (4).jpg' %}"></a>
+                    <a title="20130519_144623.jpg" href="{% static '68 (1).jpg' %}"><img alt="20130519_144623.jpg" src="{% static '68 (1).jpg' %}"></a>
+                    <a title="baden-württenmberg und bayern 2013 1 284" href="{% static '68 (2).jpg' %}"><img alt="baden-württenmberg und bayern 2013 1 284" src="{% static '68 (2).jpg' %}"></a>
+                </div>
+                <div  class="widget span3 contact-info">
+                    <h3>Get in touch</h3>
+                    <div class="sidebar-nav">
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Address:</span> Jain Mandir Road, Sanganer Jaipur, (Raj.), India.
+                            </li>
+                            <li>
+                                <i class="icon-phone" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Mobile:</span> +91 90014 75770
+                            </li>
+                            <li>
+                                <i class="icon-print" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Tel:</span>  +0141 2732342
+                            </li>
+                            <li>
+                                <i class="icon-envelope" style="color:#000;font-size:12px;width:12px;height:12px"></i>
+                                <span>Email:</span> info@tajleatherproduct.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="last-tweets-2" class=" widget span3 last-tweets">
+                    <h3>Sales world wide</h3>
+                    <div class="list-tweets-">
+                        <p> Hurry up and order now your custom product</p>
+                        <p> <b>Sales global world wide</b></p>
+                          <p> <b>Unique Leather Product</b></p>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        jQuery(function($){
+                            $('#last-tweets-2 .list-tweets-2').tweetable({
+                                listClass: 'tweets-widget-2',
+                                username: 'envato',
+                                time: true,
+                                limit: 2,
+                                replies: true
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END FOOTER -->
+
+<!-- START COPYRIGHT -->
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="left span6">
+                <a href=""><strong>ALL RIGHT RESERVE BY TAJ </strong></a>
+            </div>
+            <div class="right span6">
+                <p>Powered by
+                    <a href="" title="">
+                        <strong>TAJ LEATHER PRODUCT</strong>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END COPYRIGHT -->
+
+</div>
+<!-- END WRAPPER -->
+
+</div>
+<!-- END BG SHADOW -->
+
+
+
+<!-- START CUSTOM SCRIPT -->
+<script type='text/javascript'>
+var l10n_handler = {"map_close":"[x] Close","map_open":"[x] Open"};
+</script>
+<!-- END CUSTOM SCRIPT -->
+
+<script type='text/javascript' src="{% static '' %}js/jquery.colorbox-min.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.flexslider-min.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.tweetable.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.superfish.js"></script>
+<script type='text/javascript' src="{% static '' %}portfolios/filterable/js/jquery.filterable.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.tipsy.js"></script>
+<script type='text/javascript' src="{% static '' %}js/responsive.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.mobilemenu.js"></script>
+<script type='text/javascript' src="{% static '' %}js/shortcodes.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery/jquery.masonry.min.js"></script>
+<script type='text/javascript' src="{% static '' %}js/jquery.custom.js"></script>
+
+</body>
+<!-- END BODY -->
+</html>
